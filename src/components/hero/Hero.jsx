@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from "react";
 import beach from "../../assets/beach.jpg";
 import islandd from "../../assets/islandd.jpg";
+import thailand from "../../assets/thailand.jpeg";
 import "./Hero.css";
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const backgrounds = [
-    { image: `url(${beach})`, text: "Welcome to China\nDiscover its Beauty" },
-    { image: `url(${islandd})`, text: "Explore the Forest\nFind Serenity" },
+    { image: `url(${beach})`, text: "TRAVEL TO EXPLORE", p: "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua. Ultricies Mi Eget" },
+    { image: `url(${islandd})`, text: "TRAVEL TO EXPLORE", p: "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua. Ultricies Mi Eget" },
+    { image: `url(${thailand})`, text: "TRAVEL TO EXPLORE", p: "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua. Ultricies Mi Eget" },
   ];
 
   useEffect(() => {
@@ -26,6 +28,7 @@ const Hero = () => {
         style={{ backgroundImage: backgrounds[currentIndex].image }}>
         <div className="hero-content">
           <h1 className="multiline-text">{backgrounds[currentIndex].text}</h1>
+          <p className="multiline-text">{backgrounds[currentIndex].p}</p>
         </div>
       </div>
     </section>

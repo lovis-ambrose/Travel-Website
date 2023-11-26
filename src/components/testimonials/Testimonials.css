@@ -45,12 +45,13 @@ text-align: center;
     gap:0.5rem;
 }
 .profiledetails>:nth-child(1){
-    font-weight:700;
+    font-weight:600;
     font-size: 20px;
 }
 .profiledetails>:nth-child(2){
-    font-weight:600;
+    font-weight:300;
     font-size: 16px;
+    color: gray;
 }
 .testimonial > h1 {
     text-align: center;

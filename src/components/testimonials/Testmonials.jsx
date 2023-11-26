@@ -16,7 +16,7 @@ const Testmonials = () => {
               <img className="profileimage" src={blog.image} alt="" />
               <div className="profiledetails">
                 <span>{blog.name}</span>
-                <span>{blog.role}</span>
+                <span>{blog.role}</span> 
               </div>
             </div>
           </section>

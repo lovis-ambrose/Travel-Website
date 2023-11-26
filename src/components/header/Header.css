@@ -3,8 +3,8 @@ header{
     justify-content:space-between;
     align-items: center;
     margin: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 /* logo */
 header>div>span{
@@ -18,6 +18,10 @@ header>div>span{
     gap:2rem;
     list-style: none;
 }
+.navitems>ul>li{
+  cursor: pointer;
+}
+
 li{
     font-size: 20px;
     color:rgb(223, 157, 26)
@@ -36,8 +40,8 @@ li{
 .button{
     background-color: rgb(75, 75, 226);
     font-weight: bold;
-    font-size: larger;
-    border-radius: 6px ;
+    font-size: large;
+    border-radius: 50px ;
     padding: 5px;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -54,7 +58,7 @@ li{
     padding-left: 1rem;
     padding-right: 1rem;
   }
-  
+      
   @media (max-width: 768px) {
     header {
       flex-wrap: wrap;

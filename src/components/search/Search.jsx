@@ -17,7 +17,7 @@ const Search = () => {
   const handleFormSubmit = (e) => {
     e.preventDefault();
   };
-
+ 
   return (
     <section className="form_section">
       <form onSubmit={handleFormSubmit} className="form">
